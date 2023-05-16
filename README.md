@@ -12,11 +12,12 @@
 ## Esercizio 1B
 [Dittico]()  
 ## Esercizio 2A
-[Forma e senso]( 
+[Forma e senso]()
 ## Esercizio 2B
 [Motion]()  
 ## Esercizio 3
 [Pong]()    
-[Pioggia]
-[Neve]
+[Pioggia]() 
+[Neve]() 
 ## Esercizio 4
+[neve]()
