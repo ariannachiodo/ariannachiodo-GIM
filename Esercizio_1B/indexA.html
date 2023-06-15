@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="author" content="Arianna Chiodo" />
+	<title>dittico</title>
+	<style type="text/css">
+		html{
+			height:100%;
+		}
+		body{
+			background-color: rgb(235,235,235);
+		}
+		canvas{
+			position:absolute;
+			margin-left: -200px;
+			margin-top: -200px;
+			top: 50%;
+		}
+		#sx {
+			left: calc(50% - 200px);
+		}
+		#dx {
+			left: calc(50% + 200px);
+		}
+	</style>
+</head>
+<body>
+	<canvas id="sx" width=400 height=400></canvas>
+	<canvas id="dx" width=400 height=400></canvas>
+	<script type="module">
+
+		import Sequencer from './js/sequencer.min.js';
+
+		Sequencer.make({
+			canvas       	 : document.querySelector("#sx"),
+			from         	 : "img/runway/001.png",
+			to           	 : "img/runway/033.png",
+			direction        : "y",
+			playMode         : "hover",
+			loop         	 : "loop",
+		})
+		Sequencer.make({
+			canvas       	 : document.querySelector("#dx"),
+			from         	 : "img/runway_2/001.png",
+			to           	 : "img/runway_2/068.png",
+			direction        : "x",
+			playMode         : "hover",
+			loop         	 : "loop",
+		})
+
+	</script>
+</body>
+</html>
