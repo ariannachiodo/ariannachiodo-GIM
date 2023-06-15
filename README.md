@@ -17,7 +17,7 @@
 [Motion](Esercizio_2B/indexB.html)  
 ## Esercizio 3
 [Pong](Esercizio_3/pong/index.html)    
-[Pioggia](Esercizio_3/pioggia/sketch.js) 
+[Pioggia](Esercizio_3/pioggia/index.html) 
 [Neve](Esercizio_3/neve/index.html) 
 ## Esercizio 4
 [Orologio](Esercizio_4/clock/index.html)
