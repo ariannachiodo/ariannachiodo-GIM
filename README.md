@@ -2,8 +2,8 @@
 
 ## Esercizio 1A  
 [Acceso - Spento 2](Esercizio_1A/acceso_spento_2.html)   
-[Acceso - Spento 3]()  
-[Aperto - Chiuso 2]()  
+[Acceso - Spento 3](Esercizio_1A/acceso_spento_3.html)  
+[Aperto - Chiuso 2](Esercizio_1A/aperto_chiuso_2.html)  
 [Aperto - Chiuso 3]()  
 [Rotazione 2]()  
 [Rotazione 3]()  
