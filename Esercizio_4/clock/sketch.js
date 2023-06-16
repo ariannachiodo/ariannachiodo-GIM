@@ -1,7 +1,7 @@
 let amplitude;
 
 function setup() {
-   createCanvas(900,900); 
+   createCanvas(windowWidth, windowHeight); 
    noStroke();
    amplitude = 0.5;
    textAlign(CENTER);
@@ -11,11 +11,13 @@ function setup() {
 function draw() {
   background(0);
   
-  scale(0.5);
+  let centerX = width/2;
+  let centerY = height/2;
+  
   let h = hour();
   let m = minute();
   let s = second();
-	tempDate = new Date();
+  tempDate = new Date();
   let ms = tempDate.getMilliseconds();
   let hr_rotation = amplitude * sin((PI/60)*(m+s/60.0));
   let min_rotation = amplitude * sin((PI/60)*(s+ms/1000.0));
@@ -23,41 +25,41 @@ function draw() {
   
   // draw hours
   push();
-    translate(width,height-height/1.5);
+    translate(centerX, centerY - height/4);
     fill(255);
-    rect(-175,-220,350,10,5);
+    rect(-75,-110,150,5,2.5);
     fill(255);
     
-    translate(-135,-210);
+    translate(-55,-105);
     if (h % 2 == 0) {
       rotate(hr_rotation);
     }
-    rect(-1,0,2,400);
-    ellipse(0, 400, 90, 90);
+    rect(-1,0,2,200);
+    ellipse(0, 200, 45, 45);
     if (h % 2 == 0) {
       rotate(-hr_rotation);
     }
     
-    translate(90,0);
-    rect(-1,0,2,400);
-    ellipse(0, 400, 90, 90);
+    translate(40,0);
+    rect(-1,0,2,200);
+    ellipse(0, 200, 45, 45);
     fill(0);
     
     fill(255);
     
-    translate(90,0);
-    rect(-1,0,2,400);
-    ellipse(0, 400, 90, 90);
+    translate(40,0);
+    rect(-1,0,2,200);
+    ellipse(0, 200, 45, 45);
     fill(0);
     
     fill(255);
     
-    translate(90,0);
+    translate(40,0);
     if (h % 2 == 1) {
       rotate(-hr_rotation);
     }
-    rect(-1,0,2,400);
-    ellipse(0, 400, 90, 90);
+    rect(-1,0,2,200);
+    ellipse(0, 200, 45, 45);
     if (h % 2 == 1) {
       rotate(hr_rotation);
     }
@@ -65,41 +67,41 @@ function draw() {
   
   // draw minutes
   push();
-    translate(width,height);
+    translate(centerX, centerY);
     fill(255);
-    rect(-175,-220,350,10,5);
+    rect(-75,-110,150,5,2.5);
     fill(255);
     
-    translate(-135,-210);
+    translate(-55,-105);
     if (m % 2 == 0) {
       rotate(min_rotation);
     }
-    rect(-1,0,2,400);
-    ellipse(0, 400, 90, 90);
+    rect(-1,0,2,200);
+    ellipse(0, 200, 45, 45);
     if (m % 2 == 0) {
       rotate(-min_rotation);
     }
     
-    translate(90,0);
-    rect(-1,0,2,400);
-    ellipse(0, 400, 90, 90);
+    translate(40,0);
+    rect(-1,0,2,200);
+    ellipse(0, 200, 45, 45);
     fill(0);
     
     fill(255);
     
-    translate(90,0);
-    rect(-1,0,2,400);
-    ellipse(0, 400, 90, 90);
+    translate(40,0);
+    rect(-1,0,2,200);
+    ellipse(0, 200, 45, 45);
     fill(0);
    
     fill(255);
     
-    translate(90,0);
+    translate(40,0);
     if (m % 2 == 1) {
       rotate(-min_rotation);
     }
-    rect(-1,0,2,400);
-    ellipse(0, 400, 90, 90);
+    rect(-1,0,2,200);
+    ellipse(0, 200, 45, 45);
     if (m % 2 == 1) {
       rotate(min_rotation);
     }
@@ -107,41 +109,41 @@ function draw() {
   
   // draw seconds
   push();
-    translate(width,height+height/1.5);
+    translate(centerX, centerY + height/4);
     fill(255);
-    rect(-175,-220,350,10,5);
+    rect(-75,-110,150,5,2.5);
     fill(255);
     
-    translate(-135,-210);
+    translate(-55,-105);
     if (s % 2 == 0) {
       rotate(sec_rotation);
     }
-    rect(-1,0,2,400);
-    ellipse(0, 400, 90, 90);
+    rect(-1,0,2,200);
+    ellipse(0, 200, 45, 45);
     if (s % 2 == 0) {
       rotate(-sec_rotation);
     }
     
-    translate(90,0);
-    rect(-1,0,2,400);
-    ellipse(0, 400, 90, 90);
+    translate(40,0);
+    rect(-1,0,2,200);
+    ellipse(0, 200, 45, 45);
     fill(255);
     
     fill(255);
     
-    translate(90,0);
-    rect(-1,0,2,400);
-    ellipse(0, 400, 90, 90);
+    translate(40,0);
+    rect(-1,0,2,200);
+    ellipse(0, 200, 45, 45);
     fill(255);
    
     fill(255);
     
-    translate(90,0);
+    translate(40,0);
     if (s % 2 == 1) {
       rotate(-sec_rotation);
     }
-    rect(-1,0,2,400);
-    ellipse(0, 400, 90, 90);
+    rect(-1,0,2,200);
+    ellipse(0, 200, 45, 45);
     if (s % 2 == 1) {
       rotate(sec_rotation);
     }
