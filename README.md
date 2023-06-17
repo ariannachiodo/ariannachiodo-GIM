@@ -17,9 +17,11 @@
 [Motion](Esercizio_2B/indexB.html)  
 ## Esercizio 3
 [Pong](Esercizio_3/pong/index.html)    
-[Pioggia](Esercizio_3/pioggia/index.html) 
-[Neve](Esercizio_3/neve/index.html) 
+[Pioggia](Esercizio_3/pioggia/index.html)  
+[Neve](Esercizio_3/neve/index.html)  
 ## Esercizio 4
 [Orologio](Esercizio_4/clock/index.html)
 //Newton's cardle
 Il mio orologio a sfere ispirato al pendolo di Newton ha tre pendoli che segnano rispettivamente ore, minuti e secondi.
+
+
