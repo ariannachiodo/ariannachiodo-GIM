@@ -1,17 +1,17 @@
-var acceleration = 0.0198;
+var acceleration = 0.05;
 var nDrops = 1000;
 var drops = [];
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  // Imposta lo sfondo nero
+ // Imposta lo sfondo nero
   for (i = 0; i < nDrops; i++) {
     drops.push(new Drop());
   }
 }
 
 function draw() {
-  background(0);
+   background(0); 
   drops.forEach(function(d) {
     d.drawAndDrop();
   });

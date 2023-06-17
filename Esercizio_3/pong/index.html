@@ -1,47 +1,21 @@
-let posizioneY;
-let posizioneX;
-let velX;
-let velY;
-
-function setup() {
-  createCanvas(windowWidth, windowHeight);
-  posizioneX = width / 2;
-  posizioneY = height / 2;
-  velX = 12;
-  velY = 5;
-  background(0);
-  // Rimuovi il margine predefinito della pagina
-  document.getElementsByTagName("body")[0].style.margin = "0";
-}
-
-function draw() {
-  noStroke();
-  fill(
-    map(posizioneX, 0, width, 0, 255),
-    map(posizioneY, 0, width, 0, 255),
-    0
-  );
-
-  const g = (sin(frameCount * 0.1) + 0.2) * 150.5;
-  const b = (sin(frameCount * 0.1) + 0.2) * 200.5;
-  fill(0, g, b);
-
-  const d = sin(frameCount * 0.08) * 150 + 5;
-
-  ellipse(posizioneX, posizioneY, d, d);
-  ellipse(width - posizioneX, posizioneY, d, d);
-
-  posizioneX = posizioneX + velX;
-  posizioneY = posizioneY + velY;
-
-  if (posizioneX >= width || posizioneX <= 1) velX = -velX;
-  if (posizioneY >= height || posizioneY <= 2) velY = -velY;
-}
-
-function keyPressed() {
-  if (key == "s") save("pong.png");
-}
-
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pong (p5js)</title>
+	<style>
+		body {
+			background-color: lightgray;
+			margin: 0;
+		}
+		canvas {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.min.js"></script>
+	<script src="sketch.js"></script>
+</body>
+</html>
